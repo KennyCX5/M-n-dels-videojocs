@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0f;
+    color: #d0d0d0;
+}
+
+header {
+    background-color: #111122;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #00aaff;
+}
+
+header h1 {
+    color: #88ccff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px rgba(136, 204, 255, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #88ccff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #334455;
+    border-radius: 3px;
+    background-color: #1a1a2a;
+    display: inline-block;
+}
+
+nav a:hover {
+    border-color: #00aaff;
+    background-color: #223344;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: #111122;
+    border: 1px solid #223344;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #88ccff;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #334455;
+    font-size: 1.5rem;
+}
+
+h3, h4 {
+    color: #aaddff;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#inici img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #334455;
+}
+
+/* Grid para tarjetas */
+#jocs > div:last-child,
+#consoles > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#jocs > div:last-child > div,
+#consoles > div:last-child > div {
+    background-color: #1a1a2a;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #334455;
+}
+
+#jocs > div:last-child > div:hover,
+#consoles > div:last-child > div:hover {
+    border-color: #00aaff;
+}
+
+button {
+    background-color: #223344;
+    color: #88ccff;
+    border: 1px solid #334455;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    background-color: #334455;
+    border-color: #00aaff;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #334455;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #1a1a2a;
+    color: #88ccff;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+/* Filtros */
+#jocs > div:nth-child(2),
+#galeria > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+/* Galería */
+#galeria > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid #334455;
+}
+
+#galeria img:hover {
+    border-color: #00aaff;
+}
+
+/* Enlaces */
+#enllacos > div {
+    margin-bottom: 20px;
+}
+
+#enllacos ul {
+    list-style: none;
+}
+
+#enllacos li {
+    background-color: #1a1a2a;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 3px;
+    border-left: 2px solid #334455;
+}
+
+#enllacos li:hover {
+    border-left-color: #00aaff;
+}
+
+#enllacos a {
+    color: #88ccff;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #111122;
+    padding: 25px 15px 15px;
+    margin-top: 30px;
+    border-top: 1px solid #223344;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 8px;
+    color: #8899aa;
+}
+
+footer p:first-child {
+    color: #88ccff;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        width: 200px;
+        text-align: center;
+    }
+    
+    #jocs > div:last-child,
+    #consoles > div:last-child {
+        grid-template-columns: 1fr;
+    }
+    
+    #galeria > div:last-child {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    #galeria > div:last-child {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 0 10px;
+    }
+}
