@@ -56,10 +56,13 @@ main {
 
 section {
     background-color: #111122;
-    border: 1px solid #223344;
-    border-radius: 5px;
+    border: 1px solid #00aaff;
+    border-radius: 6px;
     padding: 20px;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
 }
 
 h2 {
@@ -86,7 +89,7 @@ p {
     border: 1px solid #334455;
 }
 
-/* Grid para tarjetas */
+
 #jocs > div:last-child,
 #consoles > div:last-child {
     display: grid;
@@ -139,7 +142,7 @@ input[type="text"]:focus {
     outline: none;
 }
 
-/* Filtros */
+
 #jocs > div:nth-child(2),
 #galeria > div:first-child {
     display: flex;
@@ -148,7 +151,7 @@ input[type="text"]:focus {
     margin: 15px 0;
 }
 
-/* Galería */
+/* Galeria */
 #galeria > div:last-child {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -168,7 +171,7 @@ input[type="text"]:focus {
     border-color: #00aaff;
 }
 
-/* Enlaces */
+/* Enllaços */
 #enllacos > div {
     margin-bottom: 20px;
 }
@@ -360,3 +363,13 @@ input[type="text"]:focus {
     background-color: #162233;
     box-shadow: -5px 0 10px rgba(0, 170, 255, 0.1);
 }
+
+
+section {
+    border: 1px solid #00aaff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2),
+                inset 0 0 5px rgba(0, 170, 255, 0.1);
+    background: #111122;
+}
+
