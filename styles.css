@@ -11,6 +11,9 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #111122;
     padding: 20px 0;
     margin-bottom: 20px;
@@ -217,7 +220,7 @@ footer p:first-child {
     margin-bottom: 12px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8rem;
@@ -373,3 +376,11 @@ section {
     background: #111122;
 }
 
+
+#consoles > div:first-of-type img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #334455;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.3);
+    
+}
