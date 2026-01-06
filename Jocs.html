@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Món dels Videojocs - Jocs</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="java.js"></script>
 </head>
 <body>
     <header>
@@ -27,17 +28,17 @@
             <h2>Jocs Destacats</h2>
             
             <div>
-                <input type="text" placeholder="Cerca jocs...">
-                <button>Cerca</button>
+                <input type="text" id="buscador" placeholder="Cerca jocs...">
+                <button id="searchBtn">Cerca</button>
             </div>
             
-            <div>
-                <button>Tots</button>
-                <button>Acció</button>
-                <button>Aventura</button>
-                <button>RPG</button>
-                <button>Esports</button>
-            </div>
+        <div>
+            <button class="filtre" data-filter="all">Tots</button>
+            <button class="filtre" data-filter="accio">Acció</button>
+            <button class="filtre" data-filter="aventura">Aventura</button>
+            <button class="filtre" data-filter="rpg">RPG</button>
+            <button class="filtre" data-filter="esports">Esports</button>
+        </div>
             
             <p>En aquesta secció trobaràs informació sobre els jocs més destacats de la història.</p>
             
