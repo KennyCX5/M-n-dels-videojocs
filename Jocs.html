@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="java.js"></script>
 </head>
+
 <body>
     <header>
         <div>
@@ -26,198 +28,197 @@
     <main>
         <section id="jocs">
             <h2>Jocs Destacats</h2>
-            
+
             <div>
                 <input type="text" id="buscador" placeholder="Cerca jocs...">
-                <button id="searchBtn">Cerca</button>
             </div>
-            
-        <div>
-            <button class="filtre" data-filter="all">Tots</button>
-            <button class="filtre" data-filter="accio">Acció</button>
-            <button class="filtre" data-filter="aventura">Aventura</button>
-            <button class="filtre" data-filter="rpg">RPG</button>
-            <button class="filtre" data-filter="esports">Esports</button>
-        </div>
-            
+
+            <div>
+                <button class="filtre" data-filter="tots">Tots</button>
+                <button class="filtre" data-filter="accio">Acció</button>
+                <button class="filtre" data-filter="aventura">Aventura</button>
+                <button class="filtre" data-filter="rpg">RPG</button>
+                <button class="filtre" data-filter="esports">Esports </button>
+            </div>
+
             <p>En aquesta secció trobaràs informació sobre els jocs més destacats de la història.</p>
-            
-    <div class="joc-card">
-        <div>
-            <h3>1. The Legend of Zelda: Ocarina of Time</h3>
-            <p>Una obra mestra que va revolucionar l'aventura en 3D.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
 
-        <div>
-            <h3>2. The Legend of Zelda: Breath of the Wild</h3>
-            <p>Exploració total i llibertat absoluta en un món obert únic.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+            <div class="targetaJoc">
+                <div categoria="aventura" enllac="https://ca.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" imatge="img/zelda_oot.jpg">
+                    <h3>1. The Legend of Zelda: Ocarina of Time</h3>
+                    <p>Una obra mestra que va revolucionar l'aventura en 3D.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>3. Super Mario Bros.</h3>
-            <p>El joc que va salvar la indústria dels videojocs.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="aventura" enllac="https://www.nintendo.es/Juegos/Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html" imatge="img/the-legend-of-zelda-breath-of-the-wild-switch-juego-nintendo-eshop-europe-cover.jpg">
+                    <h3>2. The Legend of Zelda: Breath of the Wild</h3>
+                    <p>Exploració total i llibertat absoluta en un món obert únic.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>4. Minecraft</h3>
-            <p>Creativitat infinita en un món generat procedimentalment.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="aventura" enllac="https://ca.wikipedia.org/wiki/Super_Mario_Bros." imatge="img/mario_bros.jpg">
+                    <h3>3. Super Mario Bros.</h3>
+                    <p>El joc que va salvar la indústria dels videojocs.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>5. GTA V</h3>
-            <p>Acció, història i món obert amb un nivell de detall increïble.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="aventura" enllac="https://www.minecraft.net/es-es" imatge="img/minecraft.jpg">
+                    <h3>4. Minecraft</h3>
+                    <p>Creativitat infinita en un món generat procedimentalment.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>6. The Witcher 3: Wild Hunt</h3>
-            <p>Un RPG amb una narrativa profunda i decisions reals.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="accio" enllac="https://www.rockstargames.com/gta-v" imatge="img/gta_v.jpg">
+                    <h3>5. GTA V</h3>
+                    <p>Acció, història i món obert amb un nivell de detall increïble.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>7. Red Dead Redemption 2</h3>
-            <p>Una experiència cinematogràfica ambientada al salvatge oest.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://thewitcher.com/en/witcher3" imatge="img/witcher3.webp">
+                    <h3>6. The Witcher 3: Wild Hunt</h3>
+                    <p>Un RPG amb una narrativa profunda i decisions reals.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>8. Dark Souls</h3>
-            <p>Un repte exigent que va marcar un abans i un després.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="accio" enllac="https://www.rockstargames.com/reddeadredemption2/es" imatge="img/red-dead-redemption-2-analisis-1540415933893.webp">
+                    <h3>7. Red Dead Redemption 2</h3>
+                    <p>Una experiència cinematogràfica ambientada al salvatge oest.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>9. Skyrim</h3>
-            <p>Un món obert ple de llibertat, dracs i aventures èpiques.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://es.bandainamcoent.eu/dark-souls/dark-souls" imatge="img/dark_souls.jpg">
+                    <h3>8. Dark Souls</h3>
+                    <p>Un repte exigent que va marcar un abans i un després.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>10. Tetris</h3>
-            <p>Simplicitat perfecta i addictiva.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://bethesda.net/es/game/skyrim" imatge="img/skyrim.jpg">
+                    <h3>9. Skyrim</h3>
+                    <p>Un món obert ple de llibertat, dracs i aventures èpiques.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>11. Half-Life 2</h3>
-            <p>Narrativa i física revolucionàries.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="aventura" enllac="https://tetris.com/" imatge="img/tetris.jpg">
+                    <h3>10. Tetris</h3>
+                    <p>Simplicitat perfecta i addictiva.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>12. Portal 2</h3>
-            <p>Puzles intel·ligents amb un humor brillant.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="accio" enllac="https://store.steampowered.com/app/220/HalfLife_2/" imatge="img/hl2.jpg">
+                    <h3>11. Half-Life 2</h3>
+                    <p>Narrativa i física revolucionàries.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>13. Bloodborne</h3>
-            <p>Acció fosca i atmosfera única.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="aventura" enllac="https://store.steampowered.com/app/620/Portal_2/" imatge="img/portal2.jpg">
+                    <h3>12. Portal 2</h3>
+                    <p>Puzles intel·ligents amb un humor brillant.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>14. Metal Gear Solid</h3>
-            <p>Cinema i videojoc units en una experiència única.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://www.playstation.com/es-es/games/bloodborne/" imatge="img/bloodborne.webp">
+                    <h3>13. Bloodborne</h3>
+                    <p>Acció fosca i atmosfera única.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>15. Final Fantasy VII</h3>
-            <p>Un JRPG llegendari que va marcar una generació.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="accio" enllac="https://ca.wikipedia.org/wiki/Metal_Gear_Solid" imatge="img/mgs.jpg">
+                    <h3>14. Metal Gear Solid</h3>
+                    <p>Cinema i videojoc units en una experiència única.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>16. Resident Evil 4</h3>
-            <p>Acció i terror reinventats.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://ffvii-remake.square-enix-games.com/en-us" imatge="img/ff7.jpg">
+                    <h3>15. Final Fantasy VII</h3>
+                    <p>Un JRPG llegendari que va marcar una generació.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>17. Super Mario World</h3>
-            <p>Plataformes perfecte i atemporal.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="accio" enllac="https://www.residentevil.com/re4/" imatge="img/re4.jpg">
+                    <h3>16. Resident Evil 4</h3>
+                    <p>Acció i terror reinventats.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>18. Doom</h3>
-            <p>El pare dels shooters en primera persona.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="aventura" enllac="https://www.nintendo.es/Juegos/Super-Nintendo/Super-Mario-World-279509.html" imatge="img/smw.jpg">
+                    <h3>17. Super Mario World</h3>
+                    <p>Plataformes perfecte i atemporal.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>19. Chrono Trigger</h3>
-            <p>Un RPG clàssic amb viatges en el temps.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="accio" enllac="https://bethesda.net/es/game/doom" imatge="img/doom.jpg">
+                    <h3>18. Doom</h3>
+                    <p>El pare dels shooters en primera persona.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>20. World of Warcraft</h3>
-            <p>El MMORPG més influent de la història.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://store.steampowered.com/app/613830/CHRONO_TRIGGER/" imatge="img/chrono.jpg">
+                    <h3>19. Chrono Trigger</h3>
+                    <p>Un RPG clàssic amb viatges en el temps.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>21. League of Legends</h3>
-            <p>Competitivitat i comunitat a escala mundial.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://worldofwarcraft.blizzard.com/es-es/" imatge="img/wow.jpg">
+                    <h3>20. World of Warcraft</h3>
+                    <p>El MMORPG més influent de la història.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>22. Counter-Strike</h3>
-            <p>L'essència dels esports electrònics.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="esports" enllac="https://www.leagueoflegends.com/es-es/" imatge="img/lol.jpg">
+                    <h3>21. League of Legends</h3>
+                    <p>Competitivitat i comunitat a escala mundial.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>23. Pokémon Red & Blue</h3>
-            <p>L’inici d’una de les sagues més famoses.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="esports" enllac="https://blog.counter-strike.net/" imatge="img/csgo.jpg">
+                    <h3>22. Counter-Strike</h3>
+                    <p>L'essència dels esports electrònics.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>24. Halo: Combat Evolved</h3>
-            <p>Va definir els shooters a consola.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
+                <div categoria="rpg" enllac="https://www.pokemon.com/es/" imatge="img/pokemon.jpg">
+                    <h3>23. Pokémon Red & Blue</h3>
+                    <p>L’inici d’una de les sagues més famoses.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
 
-        <div>
-            <h3>25. Elden Ring</h3>
-            <p>Un nou estàndard per als RPG moderns.</p>
-            <button>Informació</button>
-            <button>Vídeo</button>
-        </div>
-    </div>
+                <div categoria="accio" enllac="https://www.halowaypoint.com/" imatge="img/halo.jpg">
+                    <h3>24. Halo: Combat Evolved</h3>
+                    <p>Va definir els shooters a consola.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
+
+                <div categoria="rpg" enllac="https://es.bandainamcoent.eu/elden-ring/elden-ring" imatge="img/eldenring.jpg">
+                    <h3>25. Elden Ring</h3>
+                    <p>Un nou estàndard per als RPG moderns.</p>
+                    <button>Informació</button>
+                    <button>Vídeo</button>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -232,4 +233,5 @@
         </div>
     </footer>
 </body>
+
 </html>
